@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AutorizadoGuard } from './guards/autorizado.guard';
 
 const routes: Routes = [
   {
@@ -29,15 +30,23 @@ const routes: Routes = [
   },
   {
     path: 'menualumno',
-    loadChildren: () => import('./pages/menualumno/menualumno.module').then( m => m.MenualumnoPageModule)
+    loadChildren: () => import('./pages/menualumno/menualumno.module').then( m => m.MenualumnoPageModule),
+    canActivate: [AutorizadoGuard]
   },
   {
-    path: 'menudocente',
-    loadChildren: () => import('./pages/menudocente/menudocente.module').then( m => m.MenudocentePageModule)
+    path: 'menudocente/:id',
+    loadChildren: () => import('./pages/menudocente/menudocente.module').then( m => m.MenudocentePageModule),
+    canActivate: [AutorizadoGuard]
   },
   {
     path: 'qrgenerado',
-    loadChildren: () => import('./pages/qrgenerado/qrgenerado.module').then( m => m.QrgeneradoPageModule)
+    loadChildren: () => import('./pages/qrgenerado/qrgenerado.module').then( m => m.QrgeneradoPageModule),
+    canActivate: [AutorizadoGuard]
+  },
+  {
+    path: 'periodoacademico/:id',
+    loadChildren: () => import('./pages/periodoacademico/periodoacademico.module').then( m => m.PeriodoacademicoPageModule),
+    canActivate: [AutorizadoGuard]
   },
 ];
 

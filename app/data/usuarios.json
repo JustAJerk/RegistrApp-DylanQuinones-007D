@@ -1,0 +1,95 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "username": "Ausky",
+      "password": "skyy",
+      "rut": "123456789-K",
+      "role": "usuario",
+      "correo": "ausky@gmail.com",
+      "isactive": true,
+      "clases": [
+        {
+          "nombre": "Base de Datos",
+          "año": 2023,
+          "semestre": "4° Semestre",
+          "horasSemanales": "5 Horas Semanales"
+        },
+        {
+          "nombre": "Matematicas",
+          "año": 2022,
+          "semestre": "1° Semestre",
+          "horasSemanales": "4 Horas Semanales"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "Plambi",
+      "password": "bambisona",
+      "rut": "987654321-K",
+      "role": "usuario",
+      "correo": "plambi@hotmail.com",
+      "isactive": true,
+      "clases": [
+        {
+          "nombre": "Etica",
+          "año": 2024,
+          "semestre": "3° Semestre",
+          "horasSemanales": "4 Horas Semanales"
+        },
+        {
+          "nombre": "Ingles",
+          "año": 2021,
+          "semestre": "2° Semestre",
+          "horasSemanales": "6 Horas Semanales"
+        }
+      ]
+    },
+    {
+      "username": "Pedro",
+      "password": "pope",
+      "rut": "123456789-K",
+      "role": "",
+      "correo": "pedro@gmail.com",
+      "isactive": true,
+      "clases": {
+        "año": 0,
+        "semestre": "",
+        "horasSemanales": ""
+      },
+      "id": 3
+    },
+    {
+      "username": "WARIO",
+      "password": "warioland",
+      "rut": "123456789-K",
+      "role": "",
+      "correo": "wario@gmail.com",
+      "isactive": true,
+      "clases": [
+        {
+          "nombre": "",
+          "año": 0,
+          "semestre": "",
+          "horasSemanales": ""
+        }
+      ],
+      "id": 4
+    }
+  ],
+  "codigosQR": [
+    {
+      "id": 1,
+      "image": "assets/codigosQR/qr1.png"
+    },
+    {
+      "id": 2,
+      "image": "assets/codigosQR/qr2.png"
+    },
+    {
+      "id": 3,
+      "image": "assets/codigosQR/qr3.png"
+    }
+  ]
+}

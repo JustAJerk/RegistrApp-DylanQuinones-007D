@@ -7,11 +7,13 @@ import { IonicModule } from '@ionic/angular';
 import { IniciosesiondocentePageRoutingModule } from './iniciosesiondocente-routing.module';
 
 import { IniciosesiondocentePage } from './iniciosesiondocente.page';
+import { ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     IonicModule,
     IniciosesiondocentePageRoutingModule
   ],
