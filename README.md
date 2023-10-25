@@ -10,4 +10,5 @@ Cambios:
 
 Comandos para iniciar proyecto:
 - Dentro de la carpeta "data": json-server --watch usuarios.json --host 0.0.0.0 --port 3300
+- Dentro de la carpeta "data": npm install -g json-server
 - Dentro de la carpeta "src": ionic lab
