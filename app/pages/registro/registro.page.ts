@@ -15,7 +15,7 @@ export class RegistroPage implements OnInit {
     username: "",
     password: "",
     rut: "",
-    role: "",
+    role: "usuario",
     correo: "",
     isactive: true,
     clases: [

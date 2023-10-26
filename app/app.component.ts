@@ -25,13 +25,8 @@ export class AppComponent {
       icon: 'chatbox'
     },
     {
-      name: 'Docentes',
+      name: 'Iniciar Sesion',
       redirectTo: '/iniciosesiondocente',
-      icon: 'person'
-    },
-    {
-      name: 'Estudiantes',
-      redirectTo: '/iniciosesion',
       icon: 'person'
     },
     {

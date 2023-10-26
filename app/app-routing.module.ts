@@ -29,7 +29,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/iniciosesiondocente/iniciosesiondocente.module').then( m => m.IniciosesiondocentePageModule)
   },
   {
-    path: 'menualumno',
+    path: 'menualumno/:id',
     loadChildren: () => import('./pages/menualumno/menualumno.module').then( m => m.MenualumnoPageModule),
     canActivate: [AutorizadoGuard]
   },

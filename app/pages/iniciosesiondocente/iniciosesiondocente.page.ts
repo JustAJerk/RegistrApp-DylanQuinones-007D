@@ -41,7 +41,7 @@ export class IniciosesiondocentePage implements OnInit {
       this.authservice.GetUserById(this.loginForm.value.username).subscribe(resp=>{ 
         this.userdata = resp;
         console.log(this.userdata);
-        if (this.userdata.length>0){      //el objeto que buscamos existe en JSON
+        if (this.userdata.length>0){
           this.usuario = {
             id: this.userdata[0].id,
             username: this.userdata[0].username,
@@ -50,16 +50,31 @@ export class IniciosesiondocentePage implements OnInit {
             isactive: this.userdata[0].isactive
           }
           if (this.usuario.password === this.loginForm.value.password){
-            if (this.usuario.isactive){
-              sessionStorage.setItem('username', this.usuario.username);
-              sessionStorage.setItem('role', this.usuario.role);
-              sessionStorage.setItem('ingresado', 'true');
-              this.showToast('Bienvenid@! ' + this.userdata[0].username);
-              this.router.navigateByUrl('/menudocente/' + this.userdata[0].id);
+            if(this.usuario.role === 'docente'){
+              if (this.usuario.isactive){
+                sessionStorage.setItem('username', this.usuario.username);
+                sessionStorage.setItem('role', this.usuario.role);
+                sessionStorage.setItem('ingresado', 'true');
+                this.showToast('¡Sesion iniciado con exito!');
+                this.router.navigateByUrl('/menudocente/' + this.userdata[0].id);
+              }
+              else{
+                this.UserInactivo();
+                this.loginForm.reset();
+              }
             }
-            else{
-              this.UserInactivo();
-              this.loginForm.reset();
+            if(this.usuario.role === 'usuario'){
+              if (this.usuario.isactive){
+                sessionStorage.setItem('username', this.usuario.username);
+                sessionStorage.setItem('role', this.usuario.role);
+                sessionStorage.setItem('ingresado', 'true');
+                this.showToast('¡Sesion iniciado con exito!');
+                this.router.navigateByUrl('/menualumno/' + this.userdata[0].id);
+              }
+              else{
+                this.UserInactivo();
+                this.loginForm.reset();
+              }
             }
           }
           else{

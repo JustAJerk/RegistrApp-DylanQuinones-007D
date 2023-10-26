@@ -5,7 +5,7 @@
       "username": "Ausky",
       "password": "skyy",
       "rut": "123456789-K",
-      "role": "usuario",
+      "role": "docente",
       "correo": "ausky@gmail.com",
       "isactive": true,
       "clases": [
@@ -28,7 +28,7 @@
       "username": "Plambi",
       "password": "bambisona",
       "rut": "987654321-K",
-      "role": "usuario",
+      "role": "docente",
       "correo": "plambi@hotmail.com",
       "isactive": true,
       "clases": [
@@ -64,7 +64,7 @@
       "username": "WARIO",
       "password": "warioland",
       "rut": "123456789-K",
-      "role": "",
+      "role": "usuario",
       "correo": "wario@gmail.com",
       "isactive": true,
       "clases": [
@@ -76,6 +76,40 @@
         }
       ],
       "id": 4
+    },
+    {
+      "username": "Sonic",
+      "password": "greenhills",
+      "rut": "123456789-K",
+      "role": "usuario",
+      "correo": "sonic@gmail.com",
+      "isactive": true,
+      "clases": [
+        {
+          "nombre": "",
+          "año": 0,
+          "semestre": "",
+          "horasSemanales": ""
+        }
+      ],
+      "id": 5
+    },
+    {
+      "username": "Vivi",
+      "password": "duoc1234",
+      "rut": "123456789-k",
+      "role": "usuario",
+      "correo": "vivi@duocuc.cl",
+      "isactive": true,
+      "clases": [
+        {
+          "nombre": "",
+          "año": 0,
+          "semestre": "",
+          "horasSemanales": ""
+        }
+      ],
+      "id": 6
     }
   ],
   "codigosQR": [
