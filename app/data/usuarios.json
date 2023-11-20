@@ -1,0 +1,113 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "username": "Ausky",
+      "password": "skyy",
+      "rut": "123456789-K",
+      "role": "docente",
+      "correo": "ausky@gmail.com",
+      "isactive": true
+    },
+    {
+      "id": 2,
+      "username": "Plambi",
+      "password": "bambisona",
+      "rut": "123456789-K",
+      "role": "docente",
+      "correo": "plambi@gmail.com",
+      "isactive": true
+    },
+    {
+      "username": "Holad",
+      "password": "12345",
+      "rut": "123456789-K",
+      "role": "usuario",
+      "correo": "dylanmqc03@gmail.com",
+      "isactive": true,
+      "id": 3
+    },
+    {
+      "username": "dee",
+      "password": "123",
+      "rut": "",
+      "role": "usuario",
+      "correo": "",
+      "isactive": true,
+      "id": 4
+    },
+    {
+      "username": "de3",
+      "password": "123",
+      "rut": "21473789-",
+      "role": "usuario",
+      "correo": "dylanmqc03@gmail.com",
+      "isactive": true,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "username": "pepe",
+      "rut": "12345678902",
+      "role": "docente",
+      "password": "esotilin",
+      "isactive": true,
+      "correo": "dyl@gmail.com"
+    }
+  ],
+  "clases": [
+    {
+      "id": 1,
+      "nombre": "Base de Datos",
+      "docente": "Ausky",
+      "codigo": "base_de_datos",
+      "anio": 2023,
+      "semestre": "4° Semestre",
+      "horasSemanales": 5
+    },
+    {
+      "nombre": "Lenguaje",
+      "codigo": "lenguaje",
+      "docente": "Ausky",
+      "anio": 2023,
+      "semestre": "1° Semestre",
+      "horasSemanales": 4,
+      "id": 2
+    },
+    {
+      "nombre": "Matematicas",
+      "codigo": "matematicas",
+      "docente": "Ausky",
+      "anio": 2024,
+      "semestre": "2° Semestre",
+      "horasSemanales": 3,
+      "id": 3
+    }
+  ],
+  "codigosQR": [
+    {
+      "nombreDocente": "Ausky",
+      "asignatura": "BASE DE DATOS",
+      "fecha": "viernes, 17 de noviembre de 2023",
+      "id": 1
+    },
+    {
+      "nombreDocente": "Ausky",
+      "asignatura": "MATEMATICAS",
+      "fecha": "viernes, 17 de noviembre de 2023",
+      "id": 2
+    },
+    {
+      "nombreDocente": "Ausky",
+      "asignatura": "LENGUAJE",
+      "fecha": "viernes, 17 de noviembre de 2023",
+      "id": 3
+    },
+    {
+      "nombreDocente": "Ausky",
+      "asignatura": "BASE DE DATOS",
+      "fecha": "viernes, 17 de noviembre de 2023",
+      "id": 4
+    }
+  ]
+}
