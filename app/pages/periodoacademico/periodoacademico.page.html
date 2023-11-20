@@ -16,6 +16,7 @@
     </ion-toolbar>
   </ion-header>
 
+<<<<<<< HEAD
   <ion-button (click)="irClases()" expand="block" fill="clear" shape="round">
     Añadir nueva clase
   </ion-button>
@@ -30,4 +31,43 @@
         {{c['semestre']}} | {{c['horasSemanales']}} Horas Semanales
       </ion-card-content>
   </ion-card>
+=======
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12">
+          <ion-card routerLink="/qrgenerado" class="cardContentOne" >
+            <ion-card-header>
+              <ion-card-subtitle>
+                <span color="warning">Año: 2023</span>
+              </ion-card-subtitle>
+              <ion-card-title>
+                Base de Datos
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p color="warning">
+                4° Semestre | 5 Horas Semanales
+              </p> 
+            </ion-card-content>
+          </ion-card>
+          <ion-card routerLink="/qrgenerado" class="cardContentTwo">
+            <ion-card-header>
+              <ion-card-subtitle>
+                <span color="warning">Año: 2023</span>
+              </ion-card-subtitle>
+              <ion-card-title>
+                Matematicas
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p color="warning">
+                1° Semestre | 4 Horas Semanales
+              </p> 
+            </ion-card-content>
+          </ion-card>
+      </ion-col>
+      
+    </ion-row>
+   </ion-grid>
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
 </ion-content>

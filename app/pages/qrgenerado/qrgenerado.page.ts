@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiCrudService } from 'src/app/servicios/api-crud.service';
 import { Router } from '@angular/router';
+<<<<<<< HEAD
 import { QR } from '../interfaces/interfaces';
 import { AuthService } from 'src/app/servicios/auth.service';
+=======
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
 
 @Component({
   selector: 'app-qrgenerado',
@@ -11,6 +14,7 @@ import { AuthService } from 'src/app/servicios/auth.service';
 })
 export class QrgeneradoPage implements OnInit {
 
+<<<<<<< HEAD
   nombreClase:any;
 
   nombreClaseTitulo = ""
@@ -46,12 +50,31 @@ export class QrgeneradoPage implements OnInit {
     let arr=url.split("/",3);
     let id = arr[2];
     return id;
+=======
+  qr = {
+    id:0,
+    image:"",
+  }
+
+  constructor(private userService: ApiCrudService, private router: Router) { }
+
+  getUserById(qrID:number){
+    this.userService.BuscarQRId(qrID).subscribe(
+      (resp:any)=>{      
+        this.qr={
+          id: resp[0].id,
+          image: resp[0].image
+        }
+      }
+    )
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
   }
 
   numeroAleatorio(min:number, max:number) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
+<<<<<<< HEAD
   getUsuarioById(usuarioID:number){
     this.auth.BuscarUsuarioId(usuarioID).subscribe(
       (resp:any)=>{  
@@ -81,6 +104,10 @@ export class QrgeneradoPage implements OnInit {
     this.nombreClaseTitulo = this.nombreClase.toUpperCase().replace(/_/g, ' ');
     this.docenteNombre = sessionStorage.getItem('username');
     this.crearQR(); 
+=======
+  ngOnInit() {
+    this.getUserById(this.numeroAleatorio(1,3));
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
   }
 
 }

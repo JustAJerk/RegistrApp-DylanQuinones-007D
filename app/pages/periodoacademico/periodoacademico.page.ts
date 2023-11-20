@@ -1,10 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiCrudService } from 'src/app/servicios/api-crud.service';
 import { Clases } from '../interfaces/interfaces';
+<<<<<<< HEAD
 import { InfiniteScrollCustomEvent } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { LoadingController } from '@ionic/angular';
 import { AuthService } from 'src/app/servicios/auth.service';
+=======
+import { Router } from '@angular/router';
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
 
 @Component({
   selector: 'app-periodoacademico',
@@ -14,6 +18,7 @@ import { AuthService } from 'src/app/servicios/auth.service';
 export class PeriodoacademicoPage implements OnInit {
 
   usuario = {
+<<<<<<< HEAD
     id:0
   }
 
@@ -26,6 +31,23 @@ export class PeriodoacademicoPage implements OnInit {
   ionViewWillEnter(){
     this.getUserById(this.getIdFromUrl());
     this.loadClases();
+=======
+    id:0,
+    clases: [
+      {
+        nombre: "",
+        año: 0,
+        semestre: "",
+        horasSemanales: ""
+      }
+    ]
+  }
+
+  constructor(private userService: ApiCrudService, private router: Router) { }
+
+  ionViewWillEnter(){
+    this.getUserById(this.getIdFromUrl());
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
   }
 
   getIdFromUrl(){
@@ -36,15 +58,31 @@ export class PeriodoacademicoPage implements OnInit {
   }
 
   getUserById(userID:number){
+<<<<<<< HEAD
     this.auth.GetUserById(userID).subscribe(
       (resp:any)=>{      
         this.usuario={
           id: resp[0].id
+=======
+    this.userService.BuscarUserId(userID).subscribe(
+      (resp:any)=>{      
+        this.usuario={
+          id: resp[0].id,
+          clases: [
+            {
+              nombre: resp[0].nombre,
+              año: resp[0].año,
+              semestre: resp[0].semestre,
+              horasSemanales: resp[0].horasSemanales
+            }
+          ] 
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
         }
       }
     )
   }
 
+<<<<<<< HEAD
   async loadClases(event?: InfiniteScrollCustomEvent){
     const loading = await this.loadingCtrl.create({
       message: "Cargando..",
@@ -84,6 +122,9 @@ export class PeriodoacademicoPage implements OnInit {
 
   ngOnInit() {
     this.usuarioNombre = sessionStorage.getItem('username');
+=======
+  ngOnInit() {
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
   }
 
 }

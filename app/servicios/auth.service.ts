@@ -2,7 +2,10 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Users } from '../pages/interfaces/interfaces';
+<<<<<<< HEAD
 import { UsuarioNuevo } from '../pages/interfaces/interfaces';
+=======
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -23,6 +26,7 @@ export class AuthService {
   IsLoggedIn(){
     return sessionStorage.getItem('username')!=null;
   }
+<<<<<<< HEAD
 
   RegistroUsuario(newUsuario: UsuarioNuevo): Observable<UsuarioNuevo>{
     return this.httpClient.post<Users>(`${environment.apiUrl}/usuarios`, newUsuario);
@@ -35,4 +39,6 @@ export class AuthService {
   ActualizarUsuario(usuario:any):Observable<Users>{
     return this.httpClient.put<Users>(`${environment.apiUrl}/usuarios/${usuario.id}`, usuario);
   }
+=======
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
 }

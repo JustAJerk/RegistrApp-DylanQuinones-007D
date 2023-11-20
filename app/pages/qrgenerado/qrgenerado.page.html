@@ -13,12 +13,21 @@
   <ion-header collapse="condense">
   </ion-header>
 
+<<<<<<< HEAD
   <br>
   <ion-title class="ion-text-center">{{ nombreClaseTitulo }}</ion-title>
   <ion-card>
     <ion-card-content>
       <ion-card-subtitle class="ion-text-center">Codigo QR generado con exito!</ion-card-subtitle>
       <qrcode [qrdata]="nombreClase" [width]="256" [errorCorrectionLevel]="'M'" class="fotoQRcontent"></qrcode>
+=======
+  <ion-card>
+    <ion-card-header class="fotoQRheader">
+      <ion-card-subtitle>Codigo QR generado con exito!</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="fotoQRcontent">
+      <img [src]="qr.image">
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
     </ion-card-content>
   </ion-card>
   <ion-button expand="block" class="inicioBotones" name="person">

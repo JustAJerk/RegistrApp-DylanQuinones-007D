@@ -52,12 +52,18 @@ export class IniciosesiondocentePage implements OnInit {
           if (this.usuario.password === this.loginForm.value.password){
             if(this.usuario.role === 'docente'){
               if (this.usuario.isactive){
+<<<<<<< HEAD
                 sessionStorage.setItem('id', this.usuario.id.toString());
+=======
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
                 sessionStorage.setItem('username', this.usuario.username);
                 sessionStorage.setItem('role', this.usuario.role);
                 sessionStorage.setItem('ingresado', 'true');
                 this.showToast('¡Sesion iniciado con exito!');
+<<<<<<< HEAD
                 this.loginForm.reset();
+=======
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
                 this.router.navigateByUrl('/menudocente/' + this.userdata[0].id);
               }
               else{
@@ -67,12 +73,18 @@ export class IniciosesiondocentePage implements OnInit {
             }
             if(this.usuario.role === 'usuario'){
               if (this.usuario.isactive){
+<<<<<<< HEAD
                 sessionStorage.setItem('id', this.usuario.id.toString());
+=======
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
                 sessionStorage.setItem('username', this.usuario.username);
                 sessionStorage.setItem('role', this.usuario.role);
                 sessionStorage.setItem('ingresado', 'true');
                 this.showToast('¡Sesion iniciado con exito!');
+<<<<<<< HEAD
                 this.loginForm.reset();
+=======
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
                 this.router.navigateByUrl('/menualumno/' + this.userdata[0].id);
               }
               else{

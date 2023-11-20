@@ -7,12 +7,31 @@
       "rut": "123456789-K",
       "role": "docente",
       "correo": "ausky@gmail.com",
+<<<<<<< HEAD
       "isactive": true
+=======
+      "isactive": true,
+      "clases": [
+        {
+          "nombre": "Base de Datos",
+          "año": 2023,
+          "semestre": "4° Semestre",
+          "horasSemanales": "5 Horas Semanales"
+        },
+        {
+          "nombre": "Matematicas",
+          "año": 2022,
+          "semestre": "1° Semestre",
+          "horasSemanales": "4 Horas Semanales"
+        }
+      ]
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
     },
     {
       "id": 2,
       "username": "Plambi",
       "password": "bambisona",
+<<<<<<< HEAD
       "rut": "123456789-K",
       "role": "docente",
       "correo": "plambi@gmail.com",
@@ -82,10 +101,96 @@
       "semestre": "2° Semestre",
       "horasSemanales": 3,
       "id": 3
+=======
+      "rut": "987654321-K",
+      "role": "docente",
+      "correo": "plambi@hotmail.com",
+      "isactive": true,
+      "clases": [
+        {
+          "nombre": "Etica",
+          "año": 2024,
+          "semestre": "3° Semestre",
+          "horasSemanales": "4 Horas Semanales"
+        },
+        {
+          "nombre": "Ingles",
+          "año": 2021,
+          "semestre": "2° Semestre",
+          "horasSemanales": "6 Horas Semanales"
+        }
+      ]
+    },
+    {
+      "username": "Pedro",
+      "password": "pope",
+      "rut": "123456789-K",
+      "role": "",
+      "correo": "pedro@gmail.com",
+      "isactive": true,
+      "clases": {
+        "año": 0,
+        "semestre": "",
+        "horasSemanales": ""
+      },
+      "id": 3
+    },
+    {
+      "username": "WARIO",
+      "password": "warioland",
+      "rut": "123456789-K",
+      "role": "usuario",
+      "correo": "wario@gmail.com",
+      "isactive": true,
+      "clases": [
+        {
+          "nombre": "",
+          "año": 0,
+          "semestre": "",
+          "horasSemanales": ""
+        }
+      ],
+      "id": 4
+    },
+    {
+      "username": "Sonic",
+      "password": "greenhills",
+      "rut": "123456789-K",
+      "role": "usuario",
+      "correo": "sonic@gmail.com",
+      "isactive": true,
+      "clases": [
+        {
+          "nombre": "",
+          "año": 0,
+          "semestre": "",
+          "horasSemanales": ""
+        }
+      ],
+      "id": 5
+    },
+    {
+      "username": "Vivi",
+      "password": "duoc1234",
+      "rut": "123456789-k",
+      "role": "usuario",
+      "correo": "vivi@duocuc.cl",
+      "isactive": true,
+      "clases": [
+        {
+          "nombre": "",
+          "año": 0,
+          "semestre": "",
+          "horasSemanales": ""
+        }
+      ],
+      "id": 6
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
     }
   ],
   "codigosQR": [
     {
+<<<<<<< HEAD
       "nombreDocente": "Ausky",
       "asignatura": "BASE DE DATOS",
       "fecha": "viernes, 17 de noviembre de 2023",
@@ -108,6 +213,18 @@
       "asignatura": "BASE DE DATOS",
       "fecha": "viernes, 17 de noviembre de 2023",
       "id": 4
+=======
+      "id": 1,
+      "image": "assets/codigosQR/qr1.png"
+    },
+    {
+      "id": 2,
+      "image": "assets/codigosQR/qr2.png"
+    },
+    {
+      "id": 3,
+      "image": "assets/codigosQR/qr3.png"
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
     }
   ]
 }

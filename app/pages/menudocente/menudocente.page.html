@@ -2,7 +2,11 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-buttons slot="start">
+<<<<<<< HEAD
         <ion-back-button (click)="cerrarSesion()" text="Cerrar Sesion" color="danger"></ion-back-button>
+=======
+        <ion-back-button routerLink="/inicio" text="Cerrar Sesion" color="danger"></ion-back-button>
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
       </ion-buttons>
     </ion-buttons>
     <ion-title></ion-title>
@@ -19,6 +23,7 @@
 
   <ion-card color="primary">
     <ion-card-header>
+<<<<<<< HEAD
       <ion-card-subtitle class="textoSaludo">Bienvenido {{ usuarioNombre }}!</ion-card-subtitle>
     </ion-card-header>
   </ion-card>
@@ -26,6 +31,13 @@
   <ion-button expand="block" class="inicioBotones" name="person" [routerLink]="['/perfil', idPerson]"> Perfil</ion-button>
 
   <ion-button [routerLink]="['/periodoacademico', idPerson]" expand="block" class="inicioBotones" name="person">
+=======
+      <ion-card-subtitle class="textoSaludo">Bienvenido {{ usuarios.username }}!</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-button routerLink="/periodoacademico/{{usuarios.id}}" expand="block" class="inicioBotones" name="person">
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
     Generar codigo QR
   </ion-button>
 </ion-content>

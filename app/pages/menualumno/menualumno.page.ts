@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
 import { Barcode } from '@capacitor-mlkit/barcode-scanning/dist/esm/definitions';
 import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/servicios/auth.service';
+=======
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
 
 @Component({
   selector: 'app-menualumno',
@@ -12,6 +15,7 @@ import { AuthService } from 'src/app/servicios/auth.service';
 })
 export class MenualumnoPage implements OnInit {
 
+<<<<<<< HEAD
   usuarioNombre:any;
   idPerson:any;
 
@@ -91,6 +95,11 @@ export class MenualumnoPage implements OnInit {
     BarcodeScanner.isSupported().then((result) => {
       this.isSupported = result.supported;
     });
+=======
+  constructor() { }
+
+  ngOnInit() {
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
   }
 
 }

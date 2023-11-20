@@ -39,7 +39,11 @@ const routes: Routes = [
     canActivate: [AutorizadoGuard]
   },
   {
+<<<<<<< HEAD
     path: 'qrgenerado/:codigo',
+=======
+    path: 'qrgenerado',
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
     loadChildren: () => import('./pages/qrgenerado/qrgenerado.module').then( m => m.QrgeneradoPageModule),
     canActivate: [AutorizadoGuard]
   },
@@ -48,6 +52,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/periodoacademico/periodoacademico.module').then( m => m.PeriodoacademicoPageModule),
     canActivate: [AutorizadoGuard]
   },
+<<<<<<< HEAD
   {
     path: 'crearclase/:id',
     loadChildren: () => import('./pages/crearclase/crearclase.module').then( m => m.CrearclasePageModule),
@@ -63,6 +68,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/perfilactualizar/perfilactualizar.module').then( m => m.PerfilactualizarPageModule),
     canActivate: [AutorizadoGuard]
   },
+=======
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
 ];
 
 @NgModule({

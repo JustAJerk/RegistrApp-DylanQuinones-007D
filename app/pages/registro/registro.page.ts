@@ -2,8 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { UsuarioNuevo } from '../interfaces/interfaces';
 import { Router } from '@angular/router';
+<<<<<<< HEAD
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/servicios/auth.service';
+=======
+import { ApiCrudService } from 'src/app/servicios/api-crud.service';
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
 
 @Component({
   selector: 'app-registro',
@@ -16,6 +20,7 @@ export class RegistroPage implements OnInit {
     username: "",
     password: "",
     rut: "",
+<<<<<<< HEAD
     role: "",
     correo: "",
     isactive: true
@@ -33,6 +38,29 @@ export class RegistroPage implements OnInit {
       'role': new FormControl("", Validators.required)
     })
    }
+=======
+    role: "usuario",
+    correo: "",
+    isactive: true,
+    clases: [
+      {
+        nombre:"",
+        año: 0,
+        semestre: "",
+        horasSemanales: ""
+      }
+    ]
+  }
+  /*usuario = {
+    nombre: '',
+    rut: '',
+    email: '',
+    contrasena: '',
+    rol: '',
+  }*/
+
+  constructor(private alertController: AlertController, private apiCrud: ApiCrudService, private router: Router) { }
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
 
   ngOnInit() {
   }
@@ -46,6 +74,7 @@ export class RegistroPage implements OnInit {
     await alert.present();
   }
 
+<<<<<<< HEAD
   registrarUsuario(){
     if (this.registroForm.valid){
       this.auth.GetUserById(this.registroForm.value.username).subscribe(resp=>{
@@ -78,5 +107,20 @@ export class RegistroPage implements OnInit {
     });
     alerta.present();
   }
+=======
+  registro(){
+    this.apiCrud.RegistroUsuario(this.newUsuario).subscribe();
+    this.router.navigateByUrl("/inicio");
+  }
+
+  /*enviar(){
+    this.mostrarMensaje();
+    this.usuario.nombre = '';
+    this.usuario.rut = '';
+    this.usuario.email = '';
+    this.usuario.contrasena = '';
+    this.usuario.rol = '';
+  }*/
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
 
 }

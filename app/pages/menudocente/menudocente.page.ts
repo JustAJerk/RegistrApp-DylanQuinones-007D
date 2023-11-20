@@ -2,7 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { ApiCrudService } from 'src/app/servicios/api-crud.service';
 import { InfiniteScrollCustomEvent } from '@ionic/angular';
 import { Router } from '@angular/router';
+<<<<<<< HEAD
 import { AuthService } from 'src/app/servicios/auth.service';
+=======
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
 
 @Component({
   selector: 'app-menudocente',
@@ -11,10 +14,13 @@ import { AuthService } from 'src/app/servicios/auth.service';
 })
 export class MenudocentePage implements OnInit {
 
+<<<<<<< HEAD
   usuarioNombre:any;
 
   idPerson:any;
 
+=======
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
   usuarios = {
     id:0,
     username:"",
@@ -25,11 +31,18 @@ export class MenudocentePage implements OnInit {
     isactive:"",
   }
 
+<<<<<<< HEAD
   constructor(private userService: ApiCrudService, private router: Router, private auth:AuthService) { }
   
   ionViewWillEnter(){
     this.getUserById(this.getIdFromUrl());
     this.idPerson = sessionStorage.getItem('id');
+=======
+  constructor(private userService: ApiCrudService, private router: Router) { }
+  
+  ionViewWillEnter(){
+    this.getUserById(this.getIdFromUrl());
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
   }
 
   getIdFromUrl(){
@@ -40,7 +53,11 @@ export class MenudocentePage implements OnInit {
   }
 
   getUserById(userID:number){
+<<<<<<< HEAD
     this.auth.GetUserById(userID).subscribe(
+=======
+    this.userService.BuscarUserId(userID).subscribe(
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
       (resp:any)=>{   
         this.usuarios={
           id: resp[0].id,
@@ -54,6 +71,7 @@ export class MenudocentePage implements OnInit {
       }
     )
   }
+<<<<<<< HEAD
 
   cerrarSesion(){
     sessionStorage.clear();
@@ -62,6 +80,9 @@ export class MenudocentePage implements OnInit {
 
   ngOnInit() {
     this.usuarioNombre = sessionStorage.getItem('username');
+=======
+  ngOnInit() {
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
   }
 
 }

@@ -6,6 +6,10 @@ export interface Users{
     role: string;
     correo: string;
     isactive: boolean;
+<<<<<<< HEAD
+=======
+    clases: Clases[];
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
 }
 
 export interface UsuarioNuevo{
@@ -15,10 +19,15 @@ export interface UsuarioNuevo{
     role: string;
     correo: string;
     isactive: boolean;
+<<<<<<< HEAD
+=======
+    clases: Clases[];
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
 }
 
 export interface CodigoQR{
     id: string;
+<<<<<<< HEAD
     nombreDocente:string;
     asignatura:string;
     fecha:string;
@@ -47,4 +56,14 @@ export interface ClaseEspecifica{
     anio:number;
     semestre:string;
     horasSemanales:number;
+=======
+    image: string;
+}
+
+export interface Clases{
+    nombre:string;
+    año:number;
+    semestre:string;
+    horasSemanales:string;
+>>>>>>> 56fe6d99a70a39cc27d00aaa8f70bc45e7234d3a
 }
